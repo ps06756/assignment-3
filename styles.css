@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    background:#fff;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    background:#fff;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    
+}
+
+
+.main_title h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: #222222 ;
+   
+    padding: 10px 10px 0px;
+}
+
+.room_details{
+    padding: 0 10px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings_reviews{
+    padding-right: 7px;
+}
+
+.desc_details{
+    display: flex;
+}
+
+.star i{
+    height: 15px;
+    width: 19px;
+    color: red;
+   
+    position: relative;
+    top: -1px;
+
+    
+}
+.location_details{
+   
+}
+.superhost{
+    height: 18px;
+    width: 30px;
+    background: url(images/superhost.svg) 5px 11px/10px no-repeat;
+   
+    padding: 9px
+}
+
+.save_details{
+    text-decoration: underline;
+    padding: 5px 8px;
+    display: flex;
+   
+}
+
+
+.share_save:hover{
+    
+    background: rgb(247, 247, 247) ;
+    color: rgb(0, 0, 0) ;
+    border-radius:3px ;
+    padding: 5px 8px;
+   
+}
+
+.save:hover{
+    background: rgb(247, 247, 247) ;
+    color: rgb(0, 0, 0) ;
+    border-radius:3px ;
+  
+}
+.save{
+    padding: 5px 8px;
+}
+.share_save{
+   
+    padding: 5px 8px;
+}
+
+
+.share{
+    height: 18px;
+    width: 30px;
+    background: url(images/share.svg) 2px 12px/10px no-repeat;
+   
+    padding: 9px
+}
+.save span{
+    height: 18px;
+    width: 30px;
+    background: url(images/heart.png) -1px 12px/14px no-repeat;
+   
+    padding: 9px
+}
+
+.img_block{
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    flex-wrap: wrap; 
+   
+    margin: 0 auto;
+    padding: 10px 10px 10px;
+    max-width: 1124px;
+    height: 358px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.main_image{
+    flex-basis: 50%;
+    height: 358px;
+    padding-right: 6px;
+   
+}
+.main_image img{
+    border-radius: 10px 0px 0px 10px;
+}
+.sub_images_1{
+    
+    flex-basis: 25%;
+    height: 358px;
+  
+}
+.sub_images_1 img{
+    height: 100%;
+}
+.sub_images_2 img{
+    border-radius: 0px 10px 10px 0px;
+}
+.sub_images_2{
+    flex-basis: 25%;
+    height: 358px;
+}
+.address{
+    color: rgb(113, 113, 113);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.loc_text{
+    opacity: 0.5;
+    padding: 0 10px 0;
+}
+.imgrule{
+    height: 179px;
+    padding: 3px;
+}

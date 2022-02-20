@@ -13,153 +13,223 @@
     margin: 0 auto;
     background:#fff;
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    display: flex;
     
-}
-
-
-.main_title h1{
-    font-size: 25px;
-    font-weight: 400;
-    color: #222222 ;
-   
-    padding: 10px 10px 0px;
 }
 
 .room_details{
-    padding: 0 10px 10px;
-    font-size: 14px;
+   
+    flex-basis: 65%;
+    padding: 10px 10px;
+}
+.host{
     display: flex;
+    flex-basis: auto;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-.ratings_reviews{
-    padding-right: 7px;
-}
-
-.desc_details{
-    display: flex;
-}
-
-.star i{
-    height: 15px;
-    width: 19px;
-    color: red;
-   
-    position: relative;
-    top: -1px;
-
-    
-}
-.location_details{
-   
-}
-.superhost{
-    height: 18px;
-    width: 30px;
-    background: url(images/superhost.svg) 5px 11px/10px no-repeat;
-   
-    padding: 9px
-}
-
-.save_details{
-    text-decoration: underline;
-    padding: 5px 8px;
-    display: flex;
-   
-}
-
-
-.share_save:hover{
-    
-    background: rgb(247, 247, 247) ;
-    color: rgb(0, 0, 0) ;
-    border-radius:3px ;
-    padding: 5px 8px;
-   
-}
-
-.save:hover{
-    background: rgb(247, 247, 247) ;
-    color: rgb(0, 0, 0) ;
-    border-radius:3px ;
-  
-}
-.save{
-    padding: 5px 8px;
-}
-.share_save{
-   
-    padding: 5px 8px;
-}
-
-
-.share{
-    height: 18px;
-    width: 30px;
-    background: url(images/share.svg) 2px 12px/10px no-repeat;
-   
-    padding: 9px
-}
-.save span{
-    height: 18px;
-    width: 30px;
-    background: url(images/heart.png) -1px 12px/14px no-repeat;
-   
-    padding: 9px
-}
-
-.img_block{
-    display: flex;
-    width: 100%;
-    margin: 0px auto;
-    padding-bottom: 10px;
-    flex-wrap: wrap; 
-   
-    margin: 0 auto;
-    padding: 10px 10px 10px;
-    max-width: 1124px;
-    height: 358px;
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-.main_image{
-    flex-basis: 50%;
-    height: 358px;
-    padding-right: 6px;
-   
-}
-.main_image img{
-    border-radius: 10px 0px 0px 10px;
-}
-.sub_images_1{
-    
-    flex-basis: 25%;
-    height: 358px;
-  
-}
-.sub_images_1 img{
-    height: 100%;
-}
-.sub_images_2 img{
-    border-radius: 0px 10px 10px 0px;
-}
-.sub_images_2{
-    flex-basis: 25%;
-    height: 358px;
-}
-.address{
-    color: rgb(113, 113, 113);
-    text-decoration: underline;
+.host_title{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 22px;
     font-weight: 500;
 }
-.loc_text{
-    opacity: 0.5;
-    padding: 0 10px 0;
+.guest_details{
+    display: flex;    padding-top: 5px;
 }
-.imgrule{
-    height: 179px;
-    padding: 3px;
+ul{
+    display: flex;
 }
+ul li{
+   
+    margin-right: 24px;
+}
+
+ul li::marker:first-child{
+    display: none;
+}
+ul li span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.host_img{
+    width: 56px;
+    height: 56px;
+}
+
+.host_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 50%;
+
+}
+.host_icon{
+    
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -20px;
+    left: 37px;
+  
+}
+
+.common{
+    display: flex;
+    padding: 10px;
+}
+.desc_align{
+    padding: 0 17px;
+}
+.active{
+    position: relative;
+    top: 3px;
+}
+.features{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.desc_inactive{
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.main_desc{
+    padding-top: 20px;
+}
+.desc_text{
+    line-height: 24px;
+}
+.price_details{
+   
+    flex-basis: 35%;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+    height: 300px;
+    margin: 20px;
+}
+.price_reviews{
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.reviews{
+    display: flex;
+}
+
+.regular_price{
+color: rgb(113, 113, 113);
+ text-decoration: line-through;
+ font-size: 22px;
+}
+.active_price{
+    font-size: 22px;
+}
+.reviews{
+    font-size: 14px;
+    padding-left: 7px;
+}
+.ratings{
+    text-decoration: underline;
+}
+.star{
+    position: relative;
+    top: 2px;
+}
+.count{
+    padding-left: 7px;
+}
+
+.checkin_details{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 1px;
+    
+}
+
+.checkin{
+    flex-basis: 48%;
+    border-right: 1px solid black;
+    padding: 10px 29px 10px 10px;
+}
+.checkout{
+    flex-basis: 45%;
+    padding: 10px 29px 10px 10px;
+}
+.members{
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid;
+    border-top: none;
+    padding: 12px;
+}
+.mem_guests{
+    display: block;
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+.date{
+    text-align: center;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%) ;
+    border-radius: 8px;
+    max-height: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    color: #fff;
+}
+.same{
+    font-size: 12px;
+    color:#FF385C  ;
+}
+/***************responsive*************/
+
+@media screen and (max-width: 820px) {
+    .container{
+        display: block;
+        overflow: hidden;
+    }
+    .price_details {
+        flex-basis: 100%;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 12px;padding: 15px 15px 10px;  
+        box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+        height: auto;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        top: auto;
+        z-index: 999999;
+        background: #ffff;
+        margin: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .reviews,.checkin_details,.members{
+        display: none;
+    }
+    .date{
+        flex-basis: 50%;
+        margin-top: 0;
+        margin-left: 15px;
+
+    }
+    ul li span{
+        font-size: 12px;
+    }
+  .day{
+      display: none;
+  }
+}
+
